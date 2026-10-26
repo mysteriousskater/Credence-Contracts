@@ -4,8 +4,6 @@ use soroban_sdk::{
     Address, BytesN, Env, vec, IntoVal,
 };
 
-use soroban_sdk::IntoVal;
-
 fn setup_env() -> (Env, TimelockContractClient<'static>, Address) {
     let env = Env::default();
     env.mock_all_auths();
